@@ -1,0 +1,218 @@
+@base: #f5f5f5;
+//命名空间
+.shopcar {
+
+  body {
+    background-color: @base;
+  }
+
+  .shopcar-product {
+    padding: 0 16px;
+  }
+  .shopcar-product .product-info {
+    overflow: hidden;
+  }
+  .shopcar-product .product-check {
+    float: left;
+    width: 34px;
+    height: 34px;
+    margin-top: 33px;
+  }
+  .shopcar-product .product-image {
+    float: left;
+    border: 1px solid #d7d7d7;
+    margin-right: 16px;
+  }
+  .shopcar-product .product-image img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+  }
+  .shopcar-product .product-title {
+    position: relative;
+    top: -2px;
+    font-size: 14px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .shopcar-product .product-ds {
+    position: relative;
+    top: -2px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .shopcar-product .product-meta {
+    position: relative;
+    overflow: hidden;
+  }
+  .shopcar-product .product-type {
+    display: block;
+    color: #929292;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .shopcar-product .product-sale {
+    display: block;
+    position: relative;
+    top: 0px;
+    color: #a70e2e;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .shopcar-product .product-num {
+    position: absolute;
+    right: 0;
+    bottom: -4px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .shopcar-product .mod-list-item {
+    position: relative;
+    padding: 20px 0;
+  }
+  .shopcar-product .mod-list-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #d7d7d7;
+    -webkit-transform: scale3d(1, 0.5, 1);
+    -ms-transform: scale3d(1, 0.5, 1);
+    transform: scale3d(1, 0.5, 1);
+  }
+  .shopcar-product-wrap {
+    position: relative;
+    display: block;
+    left: 0;
+  }
+  .shopcar-product-wrap .deleteBtn {
+    position: absolute;
+    top: 0;
+    right: -70px;
+    width: 70px;
+    height: 140px;
+    line-height: 140px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background-color: #a70e2e;
+  }
+
+  .number-box {
+    padding: 4px 0;
+  }
+  .btn-decrease::after,
+  .btn-increase::after {
+      background: url(../images/icon_detail.png) no-repeat;
+      -webkit-background-size: 120px auto;
+      -ms-background-size: 120px auto;
+      background-size: 120px auto;
+  }
+  .btn-decrease,
+  .btn-increase {
+    position: relative;
+    float: left;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #19191a;
+    background-color: transparent;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 999px;
+    text-align: center;
+    padding: 0;
+    overflow: hidden;
+  }
+  .btn-decrease::after,
+  .btn-increase::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background-position: -100px 0;
+    margin-top: -10px;
+    margin-left: -10px;
+  }
+  .btn-decrease::after {
+    background-position: -100px -20px;
+  }
+  .btn-decrease.disabled,
+  .btn-decrease[disabled],
+  .btn-increase.disabled,
+  .btn-increase[disabled] {
+    border-color: #d7d7d7;
+    color: #d7d7d7;
+    cursor: not-allowed;
+  }
+  .btn-decrease.disabled::after,
+  .btn-decrease[disabled]::after {
+    background-position: -80px -40px;
+  }
+  .btn-increase.disabled::after,
+  .btn-increase[disabled]::after {
+    background-position: -60px -40px;
+  }
+  .input-num {
+    float: left;
+    width: 42px;
+    height: 22px;
+    background-color: transparent;
+    border: 0 none;
+    color: #19191a;
+    font-size: 14px;
+    line-height: normal;
+    text-align: center;
+  }
+  .submit-bar {
+    padding-top: 9px;
+  }
+  .submit-bar .pay {
+    position: relative;
+    height: 38px;
+    text-align: right;
+    margin-right: 10px;
+  }
+  .submit-bar .pay-text {
+    font-size: 14px;
+    // line-height: 38px;
+    padding: 0;
+  }
+  .submit-bar .pay-price {
+    color: #a70e2e;
+    font-weight: 700;
+  }
+  .submit-bar .pay-note {
+    color: #929292;
+    font-size: 11px;
+    margin-left: 16px;
+    display: block;
+  }
+  .submit-bar .operate {
+    max-width: 103px;
+    margin-right: 6px;
+  }
+  .submit-bar .product-allCheck {
+    float: left;
+    width: 36px;
+    height: 36px;
+    margin: 0 7px 0 16px;
+  }
+}
+.shopcar-content {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: @base;
+  box-sizing: border-box;
+  padding-bottom: 55px;
+}

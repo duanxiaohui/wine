@@ -1,0 +1,26 @@
+@charset "UTF-8";
+html, body{
+	height: auto;
+}
+body{
+	padding-bottom: 63px;
+}
+.___footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 63px;
+	line-height: 63px;
+	background: url(/images/footerBg.png) no-repeat center top;
+	background-size: cover;
+}
+.___footer img{
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	vertical-align: bottom;
+}
+.___footer span{
+	color: #fff;
+	margin-left: 70px;
+}

@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+/* layout
+---------------------------------- */
+.account {
+    min-height: 100%;
+    background: #1f1f21 url(../images/bg_account.png) repeat;
+    -webkit-background-size: 160px auto;
+    background-size: 160px auto;
+}
+
+.mod-header {
+    background-color: transparent;
+}
+
+.mod-header h1 {
+    display: none;
+}
+
+.btn-primary {
+    background-color: #c7965b;
+    color: #1f1f21;
+}
+
+.btn-primary:active {
+    background-color: #b28044;
+}
+
+.input-text {
+    height: 26px;
+    color: #fff;
+}
+
+.multi-group .btn-info {
+    display: block;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid #c7965b;
+    border-radius: 3px;
+    color: #c7965b;
+    font-size: 12px;
+    line-height: normal;
+    padding: 0 10px;
+}
+
+.multi-group .btn-info:active {
+    border-color: #7c592f;
+    color: #7c592f;
+}
+
+.multi-group .btn-info[disabled],
+.multi-group .btn-info[disabled]:active {
+    border-color: #747474;
+    color: #747474;
+}
+
+.form-widget {
+    padding: 50px 0 32px;
+}
+
+.form-field {
+    padding-top: 15px;
+}
+
+.form-field::after {
+    left: 0;
+}
+
+.form-item,
+.form-control {
+    display: block;
+}
+
+.form-item {
+    padding: 10px 0;
+}
+
+.form-item::after {
+    background-color: #3e3e3e;
+}
+
+.active .form-item::after {
+    background-color: #c7965b;
+}
+
+.form-label {
+    display: none;
+}
+
+.form-opt ~ .form-text {
+    color: #747474;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0;
+    margin: 18px 0 0;
+}
+
+.form-text-bottom {
+    text-align: center;
+}
+
+.form-text-bottom a {
+    color: #fff;
+}

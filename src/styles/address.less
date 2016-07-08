@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+/* layout
+---------------------------------- */
+/*命名空间addressManege*/
+.addressManege{
+  .address-choose,
+  .address-manage,
+  .address-add,
+  .address-modify {
+      background-color: #fff;
+  }
+
+  .address-list .mod-list-info {
+      position: relative;
+      z-index: 1;
+      min-height: 96px;
+      padding: 0 16px;
+  }
+
+  .address-list .mod-list-info::after {
+      content: "";
+      position: absolute;
+      bottom: 1px;
+      right: 16px;
+      left: 16px;
+      height: 1px;
+      background-color: #d7d7d7;
+      -webkit-transform: scale3d(1, 0.5, 1);
+      -ms-transform: scale3d(1, 0.5, 1);
+      transform: scale3d(1, 0.5, 1);
+  }
+
+  .address-list .mod-list-item:last-child .mod-list-info::after {
+      background-color: #fff;
+  }
+
+  .address-list .mod-list-info.active::after,
+  .address-list a.mod-list-info:active::after,
+  .address-list .mod-list-item:last-child .mod-list-info.active::after {
+      right: 0;
+      left: 0;
+      z-index: -1;
+      height: 100%;
+      background-color: #c7965b !important;
+      -webkit-transform: scale3d(1, 1, 1);
+      -ms-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+  }
+
+  .address-list .radio-group {
+      max-width: 42px;
+      margin-left: 8px;
+  }
+
+  .address-list .com-arrow-right {
+      max-width: 22px;
+      margin-right: 12px;
+  }
+
+  .address-list .radio-group ~ .com-arrow-right {
+      display: none;
+  }
+
+  .address-info {
+      overflow: hidden;
+  }
+
+  .address-list .mod-list-info.active .address-info {
+      color: #fff;
+  }
+
+  .address-user {
+      float: left;
+      font-size: 14px;
+      line-height: 20px;
+  }
+
+  .address-phone {
+      float: right;
+      font-size: 14px;
+      line-height: 20px;
+  }
+
+  .address-address {
+      clear: both;
+      font-size: 12px;
+      line-height: 18px;
+      padding-top: 6px;
+  }
+
+  .mod-footbar {
+      height: 60px;
+      background-color: #f5f5f5;
+  }
+
+  .mod-footbar::before {
+      display: none;
+  }
+
+  .mod-footbar-show {
+      padding-bottom: 60px;
+  }
+
+  .submit-bar,
+  .submit-bar .operate {
+      margin: 0 8px;
+  }
+
+  .submit-bar .btn-large {
+      line-height: 44px;
+  }
+
+  .submit-bar .btn-info.btn-large {
+      line-height: 42px;
+  }
+  @-webkit-keyframes aaa {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  @-o-keyframes aaa {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  @-moz-keyframes aaa {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  @keyframes aaa {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  .transition{
+    -webkit-animation: aaa .3s ease-in-out;
+    -o-animation: aaa .3s ease-in-out;
+    -moz-animation: aaa .3s ease-in-out;
+    animation: aaa .3s ease-in-out;
+  }
+}
